@@ -1,0 +1,12 @@
+/* we use ng-directives for styling our forms */
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #f3231f; /* red */
+  }
+  
+  .row{
+    margin-right: 0;
+  }

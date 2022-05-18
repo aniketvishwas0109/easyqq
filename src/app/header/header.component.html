@@ -1,0 +1,59 @@
+<!-- <p>header works!</p> -->
+
+<!-- <nav>
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-bold " href="#">
+        <img
+          src="https://res.cloudinary.com/teepublic/image/private/s--TkhDpkeM--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_000000,e_outline:48/co_000000,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/t_watermark_lock/c_limit,f_auto,h_630,q_90,w_630/v1569117826/production/designs/6047954_0.jpg"
+          alt="logo" width="30" height="30" class="d-inline-block align-text-top">
+        <span class="">asyQ</span>
+      </a>
+    </div>
+  </nav>
+</nav> -->
+
+<header>
+  <div class="container sticky-sm-top ">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3">
+        <div class="logo" (click)="reloadPage()">
+          <img
+            src="https://res.cloudinary.com/teepublic/image/private/s--TkhDpkeM--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_000000,e_outline:48/co_000000,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/t_watermark_lock/c_limit,f_auto,h_630,q_90,w_630/v1569117826/production/designs/6047954_0.jpg"
+            alt="logo" width="40" height="40" class="d-inline-block align-text-top">
+          <span>asyQ</span>
+        </div>
+      </div>
+
+      <div class="col-md-9 col-sm-9 col-9 text-end ">
+        <div class="menu_icon" [class.menu_icon_Class]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu" [class.menuClass]="menuVariable">
+          <ul>
+            <li>
+              <a class="Homepage" [routerLink]="['/']" routerLinkActive="active">Home</a>
+            </li>
+            <li>
+              <a class="Aboutpage" [routerLink]="['About']" routerLinkActive="active">About</a>
+
+            </li>
+            <li>
+              <a class="Contactpage" [routerLink]="['Contact']" routerLinkActive="active">Contact</a>
+            </li>
+
+            <li>
+              <a class="loginpage" [routerLink]="['login']" routerLinkActive="active">LogIn</a>
+            </li>
+
+            <li>
+              <a class="signuppage" [routerLink]="['signup']" routerLinkActive="active">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

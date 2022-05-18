@@ -1,0 +1,118 @@
+header {
+  padding: 16px 0;
+  background: #3f51b5;
+}
+.logo{
+  position: relative;
+  left: 6px;
+  top: -1px;
+  font-family: 'Signika', sans-serif;
+  cursor: pointer;
+}
+.logo span{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 14px;
+    cursor: pointer;
+}
+/* .logo img:hover,span:hover{
+  
+    background: #ff96ad ;
+    color: black;
+    box-shadow: 0 0 5px #ff96ad , 0 0 25px #ff96ad , 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+} */
+.logo img:hover{
+  background: #ff96ad ;
+  color: black;
+  box-shadow: 0 0 5px #ff96ad , 0 0 25px #ff96ad , 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+.menu {
+  margin-top: 12px;
+}
+.menu ul li {
+  list-style-type: none; /* removing bubble */
+  color: #fff;
+  display: inline; /* horizontally set  */
+  font-size: 25px;
+  margin-left: 24px;
+}
+.menu ul li a{
+  list-style-type: none; /* removing bubble */
+  text-decoration: none;
+  color: #fff;
+  display: inline; /* horizontally set  */
+  font-size: 25px;
+  margin-left: 24px;
+}
+.menu ul li a:hover {
+  color: rgb(79, 218, 15);
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+
+/* Work on Responsivness :Css media query*/
+
+@media only screen and (max-width: 999px) {
+  .menu {
+    position: absolute;
+    right: -280px;/* right: 0; */
+    top: 99px;   /* Height of menu adjust here  */
+    width: 200px;
+    height: 30%;  /* 1 part 6% ,5 list-item then 30% */
+    background: #222;
+    transition: 0.4s ease-in-out;   /* menu open close transition */
+    z-index: 1;   /* To adjust menu  */
+    opacity: 0.92;    /* diluting opacity of menu-list  */
+  }
+  .menu ul li {
+    display: block; /* making vertical home,about, etc */
+    text-align: left;
+    margin: 0;
+    padding: 10px 0 10px 26px;
+    border-bottom: 1px solid #312f2f;
+    opacity: 10;
+    cursor: pointer;
+  }
+  .menu_icon{
+      display: inline-block;
+      position: relative;
+      right: 0;
+      top: 10px;
+  }
+  .menu_icon span{
+      width: 32px;
+      height: 3px;
+      background: #fff;
+      display: block;
+      transition: 0.2s ease-in-out;
+  }
+  .menu_icon span:nth-child(2){
+      margin: 4px 0;
+  }
+  .menu_icon_Class span:nth-child(2){
+      display: none;
+  }
+  /* creating cross sign using css  */
+  .menu_icon_Class span:nth-child(1){
+      transform: rotate(40deg);
+  }
+  .menu_icon_Class span:nth-child(3){
+      transform: rotate(-40deg);
+      margin-top: -3px;
+  }
+  .menuClass{
+      right: 0;
+      transition: 0.4s ease-in-out;     /* adding transition when menu open or closed */
+  }
+}
+/* .container{
+  position: sticky;
+} */

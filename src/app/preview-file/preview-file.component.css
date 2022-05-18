@@ -1,0 +1,5 @@
+.Gbtn:hover{ 
+    background: #ff96ad ;
+    color: black;
+    box-shadow: 0 0 5px #ff96ad , 0 0 25px #ff96ad , 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
